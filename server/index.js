@@ -6,6 +6,7 @@ let app = express();
 let server = require('http').Server(app);
 let io = require('socket.io')(server);
 
+let port= process.env.PORT || 6677;
 
 app.use(express.static('../client'));
 
@@ -35,6 +36,6 @@ io.on('connection', function(socket){
   });
 });
 
-server.listen(6677, function(){
+server.listen(port, function(){
   console.log('Servidor funcionando en http://localhost:6677');
 });
