@@ -15,8 +15,8 @@ app.get('/hola', function(req, res){
 // esto deveria ir en una base de datos
 let messages = [{
       id:1,
-      text: 'Bienvenido al chat super duper del magnifico Nahuel Maya',
-      nickname: 'Bot de Bienvenida'
+      text: 'Bienvenido al chat de Nahuel Maya',
+      nickname: 'Bot - de Bienvenida'
 }]
 
 //abrimos una conexion al socket.io, el metodo on nos permite lanzar eventos
